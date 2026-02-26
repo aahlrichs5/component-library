@@ -1,0 +1,62 @@
+{
+  "name": "@aahlrichs5/component-library",
+  "version": "0.0.1",
+  "description": "A component library playground where components are created then exported into other projects",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aahlrichs5/component-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aahlrichs5/component-library/issues"
+  },
+  "homepage": "https://github.com/aahlrichs5/component-library#readme",
+  "peerDependencies": {
+    "react": "^19.2.4",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^8.6.17",
+    "@storybook/react-vite": "^8.6.17",
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^10.0.2",
+    "prettier": "^3.8.1",
+    "react": "^19.2.4",
+    "storybook": "^8.6.17",
+    "tailwindcss": "^4.2.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
